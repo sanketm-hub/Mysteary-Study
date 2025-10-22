@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import React from "react";
+import { Geist, Wittgenstein } from "next/font/google";
+import Footer from "@/app/components/Footer";
 
+// Google Fonts setup
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+    variable: "--font-geist-sans",
+    subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const wittgenstein = Wittgenstein({
+    variable: "--font-wittgenstein",
+    subsets: ["latin"],
+    weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -25,9 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${wittgenstein.variable} antialiased`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );

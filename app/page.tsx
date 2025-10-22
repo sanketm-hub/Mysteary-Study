@@ -1,103 +1,165 @@
+import React from "react";
 import Image from "next/image";
+import { Geist, Wittgenstein } from "next/font/google";
+import StayTune from "@/app/components/StayTune";
+import Link from "next/link";
+
+// Google Fonts setup
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const wittgenstein = Wittgenstein({
+  variable: "--font-wittgenstein",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <section className={`min-h-[408px] md:min-h-[654px] lg:min-h-[654px] ${geistSans.className}`}>
+        <div className="w-full">
+          <div className="flex flex-row gap-[10px]">
+            <div className="w-full md:w-[454px] lg:w-[454px] hidden md:hidden lg:block">
+              <Image
+                src="/assets/home/ban-first.webp"
+                alt="Candles&teas"
+                width={452}
+                height={654}
+              />
+            </div>
+            <div className="w-full md:w-full lg:w-[978px] flex-1
+          lg:bg-[url('/assets/home/home_desktop_ban.webp')] 
+          md:bg-[url('/assets/home/home_tab_ban.webp')] 
+          bg-[url('/assets/home/home_mob_ban.webp')] 
+          bg-center bg-cover bg-no-repeat
+          py-[64px] px-[16px] md:py-[80px] md:px-[24px] lg:py-[80px] lg:px-[56px]">
+              <div className="flex flex-col gap-[20px] md:gap-[24px] lg:gap-[24px]">
+                <h1 className={`text-[#1A2E05] text-[48px] leading-[57.6px]
+                md:text-[64px] md:leading-[76.8px] lg:text-[64px] lg:leading-[76.8px]
+                max-w-[343px] md:max-w-[539px] lg:max-w-[539px] ${wittgenstein.className}`}>
+                  Awaken Your Natural Senses
+                </h1>
+                <p className="text-[#1A2E05] text-[16px] leading-[24px]
+              md:text-[18px] md:leading-[27px]  lg:text-[18px] lg:leading-[27px]
+              max-w-[343px] md:max-w-[525px] lg:max-w-[525px]">
+                  Discover the art of wellness with 100% natural teas,
+                  handcrafted candles, and soothing soaps.
+                </p>
+                <Link href="/contact-us" className="w-fit bg-[#1A2E05] text-[#CEE3BC] py-[14px] px-[24px]
+                md:py-[16px] md:px-[32px] lg:py-[16px] lg:px-[32px] text-[16px] leading-[24px]
+                md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px] hover:text-[#1A2E05] hover:bg-[#fff]">
+                  Shop Now
+                </Link>
+              </div>
+            </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
+
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      <section className={`bg-[#fff] ${geistSans.className}`}>
+        <div className="max-w-[1376px] mx-auto pt-[48px] px-[16px] md:pt-[64px] md:px-[24px] lg:pt-[64px] lg:px-[32px]">
+          <h2 className={`text-[#111] font-medium text-[24px] leading-[28.8px]
+            md:text-[32px] md:leading-[38.4px] lg:text-[32px] lg:leading-[38.4px]
+            mb-[32px] md:mb-[40px] lg:mb-[40px] ${wittgenstein.className}`}>
+            Our Signature Creations
+          </h2>
+          <div className="grid grid-cols-1 gap-[24px] md:grid-cols-2 md:gap-x-[24px] md:gap-y-[40px] lg:grid-cols-3 lg:gap-[24px]">
+            <div>
+              <a href="#">
+                <Image src="/assets/home/natural_teas.webp" alt="natural teas" width={442} height={450}
+                  className="object-cover w-full h-[384px] md:w-[348px] md:h-[450px] lg:w-[442px] lg:[450px]
+                  pb-[14px] md:pb-[24px] lg:pb-[24px]" />
+
+                <h4 className="flex flex-row justify-between items-center text-[#111] text-[18px] leading-[27px]
+                  md:text-[20px] md:leading-[30px] lg:text-[20px] lg:leading-[30px] mb-[4px] md:mb-[8px] lg:mb-[8px]">
+                  Natural Teas
+                  <span>
+                    <Image src="/assets/home/arrow-up-right.svg" alt="arrow" width={24} height={24}
+                      className="object-contain w-[20px] h-[20px] md:w-[24px] md:h-[24px] lg:w-[24px] lg:h-[24px]" />
+                  </span>
+
+                </h4>
+                <p className="text-[#666] text-[14px] leading-[21px] md:text-[16px] md:leading-[24px] lg:text-[16px] lg:leading-[24px]">
+                  Refreshing blends for body and mind.
+                </p>
+              </a>
+            </div>
+
+            <div>
+              <a href="#">
+                <Image src="/assets/home/handcrafted_candles.webp" alt="handcrafted Candles" width={442} height={450}
+                  className="object-cover w-full h-[384px] md:w-[348px] md:h-[450px] lg:w-[442px] lg:[450px]
+                  pb-[14px] md:pb-[24px] lg:pb-[24px]" />
+
+                <h4 className="flex flex-row justify-between items-center text-[#111] text-[18px] leading-[27px]
+                  md:text-[20px] md:leading-[30px] lg:text-[20px] lg:leading-[30px] mb-[4px] md:mb-[8px] lg:mb-[8px]">
+                  Handcrafted Candles
+                  <span>
+                    <Image src="/assets/home/arrow-up-right.svg" alt="arrow" width={24} height={24}
+                      className="object-contain w-[20px] h-[20px] md:w-[24px] md:h-[24px] lg:w-[24px] lg:h-[24px]" />
+                  </span>
+
+                </h4>
+                <p className="text-[#666] text-[14px] leading-[21px] md:text-[16px] md:leading-[24px] lg:text-[16px] lg:leading-[24px]">
+                  Aromatic light for calming spaces.
+                </p>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <Image src="/assets/home/artisanal_soaps.webp" alt="artisanal soaps" width={442} height={450}
+                  className="object-cover w-full h-[384px] md:w-[348px] md:h-[450px] lg:w-[442px] lg:[450px]
+                  pb-[14px] md:pb-[24px] lg:pb-[24px]" />
+
+                <h4 className="flex flex-row justify-between items-center text-[#111] text-[18px] leading-[27px]
+                  md:text-[20px] md:leading-[30px] lg:text-[20px] lg:leading-[30px] mb-[4px] md:mb-[8px] lg:mb-[8px]">
+                  Artisanal Soaps
+                  <span>
+                    <Image src="/assets/home/arrow-up-right.svg" alt="arrow" width={24} height={24}
+                      className="object-contain w-[20px] h-[20px] md:w-[24px] md:h-[24px] lg:w-[24px] lg:h-[24px]" />
+                  </span>
+
+                </h4>
+                <p className="text-[#666] text-[14px] leading-[21px] md:text-[16px] md:leading-[24px] lg:text-[16px] lg:leading-[24px]">
+                  Gentle cleansing with natural botanicals.
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={`bg-[#fff] ${geistSans.className}`}>
+        <div className="max-w-[1376px] mx-auto pt-[48px] pb-[64px] px-[16px] md:pt-[64px] md:pb-[80px] md:px-[24px]
+            lg:pt-[64px] lg:pb-[80px] lg:px-[24px]">
+          <div className="flex flex-row justify-between items-center  mb-[32px] md:mb-[40px] lg:mb-[40px]">
+            <div>
+              <h2 className={`text-[#111] font-medium text-[24px] leading-[28.8px]
+            md:text-[32px] md:leading-[38.4px] lg:text-[32px] lg:leading-[38.4px]
+            ${wittgenstein.className}`}>
+                Shop Bestsellers
+              </h2>
+            </div>
+            <div>
+                <Link href="#" className="flex flex-row items-center gap-[6px] md:gap-[8px] lg:gap-[8px] text-[#1A2E05]
+                text-[16px] leading-[24px] md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px]">
+                See All Products
+                <span>
+                  <Image src="/assets/home/arrow-right.svg" alt="arrow-right" width={24} height={24} 
+                  className="object-cover w-[20px] h-[20px] md:w-[24px] md:h-[24px] lg:w-[24px] lg:h-[24px]"/>
+
+                </span>
+                </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      <StayTune />
+    </>
   );
 }
