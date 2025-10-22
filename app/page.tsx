@@ -146,17 +146,127 @@ export default function Home() {
               </h2>
             </div>
             <div>
-                <Link href="#" className="flex flex-row items-center gap-[6px] md:gap-[8px] lg:gap-[8px] text-[#1A2E05]
+              <Link href="#" className="flex flex-row items-center gap-[6px] md:gap-[8px] lg:gap-[8px] text-[#1A2E05]
                 text-[16px] leading-[24px] md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px]">
                 See All Products
                 <span>
-                  <Image src="/assets/home/arrow-right.svg" alt="arrow-right" width={24} height={24} 
-                  className="object-cover w-[20px] h-[20px] md:w-[24px] md:h-[24px] lg:w-[24px] lg:h-[24px]"/>
+                  <Image src="/assets/home/arrow-right.svg" alt="arrow-right" width={24} height={24}
+                    className="object-cover w-[20px] h-[20px] md:w-[24px] md:h-[24px] lg:w-[24px] lg:h-[24px]" />
 
                 </span>
-                </Link>
+              </Link>
             </div>
           </div>
+
+          <div className="grid grid-cols-1 gap-[24px] md:grid-cols-2 md:gap-x-[31px] md:gap-y-[40px] lg:grid-cols-3 lg:gap-[31px]">
+            <div>
+              <a href="#">
+                <Image src="/assets/home/macroon_melts.webp" alt="artisanal soaps" width={438} height={468}
+                  className="object-cover w-full h-[384px] md:w-[344.5px] md:h-[468px] lg:w-[438px] lg:[468px]
+                  mb-[18px] md:mb-[20px] lg:mb-[20px] shadow-[0_4px_10px_0_rgba(208,231,190,0.25)]" />
+                  <h4 className="text-[#222] lg:text-[20px] lg:leading-[30px] md:text-[20px] md:leading-[30px]
+                  text-[18px] leading-[27px] mb-[8px] lg:mb-[12px] md:mb-[12px]">
+                    Macaroon Melts
+                  </h4>
+                  <div className="flex flex-row justify-between items-center mb-[18px] md:mb-[20px] lg:mb-[20px]">
+                    <p className="text-[#111] font-semibold 
+                    text-[18px] leading-[27px] md:text-[20px] md:leading-[30px] lg:text-[20px] lg:leading-[30px]">
+                      $15.00
+                    </p>
+                    <div className="flex flex-row gap-[6px] md:gap-[9px] lg:gap-[9px]">
+                      <Image
+                      src="/assets/home/ratings.svg"
+                      alt="Ratings"
+                      width={128}
+                      height={24}
+                      className="object-cover w-[108px] h-[20px] md:w-[128px] md:h-[24px] lg:w-[128px] lg:h-[24px]"
+                      />
+                      <p className="text-[#222] text-[16px] leading-[24px]
+                      md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px]">(12)</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                  className="py-[14px] px-[24px] md:py-[14px] md:px-[32px] lg:py-[14px] lg:px-[32px] inline-block w-full bg-[#CEE3BC] text-[#1A2E05]
+                  text-[16px] leading-[24px] md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px] border border-[#CEE3BC] text-center
+                  hover:bg-[#fff]">
+                    Add to Cart
+                  </a>
+              </a>
+            </div>
+
+            <div>
+              <a href="#">
+                <Image src="/assets/home/Organic_Berry.webp" alt="Organic Berry Berry" width={438} height={468}
+                  className="object-cover w-full h-[384px] md:w-[344.5px] md:h-[468px] lg:w-[438px] lg:[468px]
+                  mb-[18px] md:mb-[20px] lg:mb-[20px] shadow-[0_4px_10px_0_rgba(208,231,190,0.25)]" />
+                  <h4 className="text-[#222] lg:text-[20px] lg:leading-[30px] md:text-[20px] md:leading-[30px]
+                  text-[18px] leading-[27px] mb-[8px] lg:mb-[12px] md:mb-[12px]">
+                    Organic Berry Berry
+                  </h4>
+                  <div className="flex flex-row justify-between items-center mb-[18px] md:mb-[20px] lg:mb-[20px]">
+                    <p className="text-[#111] font-semibold 
+                    text-[18px] leading-[27px] md:text-[20px] md:leading-[30px] lg:text-[20px] lg:leading-[30px]">
+                      $10.00
+                    </p>
+                    <div className="flex flex-row gap-[6px] md:gap-[9px] lg:gap-[9px]">
+                      <Image
+                      src="/assets/home/ratings.svg"
+                      alt="Ratings"
+                      width={128}
+                      height={24}
+                      className="object-cover w-[108px] h-[20px] md:w-[128px] md:h-[24px] lg:w-[128px] lg:h-[24px]"
+                      />
+                      <p className="text-[#222] text-[16px] leading-[24px]
+                      md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px]">(12)</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                  className="py-[14px] px-[24px] md:py-[14px] md:px-[32px] lg:py-[14px] lg:px-[32px] inline-block w-full bg-[#CEE3BC] text-[#1A2E05]
+                  text-[16px] leading-[24px] md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px] border border-[#CEE3BC] text-center
+                  hover:bg-[#fff]">
+                    Add to Cart
+                  </a>
+              </a>
+            </div>
+
+
+            <div>
+              <a href="#">
+                <Image src="/assets/home/Tea&Saucer.webp" alt="Teacup and Saucer Candle" width={438} height={468}
+                  className="object-cover w-full h-[384px] md:w-[344.5px] md:h-[468px] lg:w-[438px] lg:[468px]
+                  mb-[18px] md:mb-[20px] lg:mb-[20px] shadow-[0_4px_10px_0_rgba(208,231,190,0.25)]" />
+                  <h4 className="text-[#222] lg:text-[20px] lg:leading-[30px] md:text-[20px] md:leading-[30px]
+                  text-[18px] leading-[27px] mb-[8px] lg:mb-[12px] md:mb-[12px]">
+                    Teacup and Saucer Candle
+                  </h4>
+                  <div className="flex flex-row justify-between items-center mb-[18px] md:mb-[20px] lg:mb-[20px]">
+                    <p className="text-[#111] font-semibold 
+                    text-[18px] leading-[27px] md:text-[20px] md:leading-[30px] lg:text-[20px] lg:leading-[30px]">
+                      $15.00
+                    </p>
+                    <div className="flex flex-row gap-[6px] md:gap-[9px] lg:gap-[9px]">
+                      <Image
+                      src="/assets/home/ratings.svg"
+                      alt="Ratings"
+                      width={128}
+                      height={24}
+                      className="object-cover w-[108px] h-[20px] md:w-[128px] md:h-[24px] lg:w-[128px] lg:h-[24px]"
+                      />
+                      <p className="text-[#222] text-[16px] leading-[24px]
+                      md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px]">(12)</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                  className="py-[14px] px-[24px] md:py-[14px] md:px-[32px] lg:py-[14px] lg:px-[32px] inline-block w-full bg-[#CEE3BC] text-[#1A2E05]
+                  text-[16px] leading-[24px] md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px] border border-[#CEE3BC] text-center
+                  hover:bg-[#fff]">
+                    Add to Cart
+                  </a>
+              </a>
+            </div>
+          </div>
+
+
         </div>
       </section>
       <StayTune />
