@@ -70,7 +70,7 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 gap-[24px] md:grid-cols-2 md:gap-x-[24px] md:gap-y-[40px] lg:grid-cols-3 lg:gap-[24px]">
             <div>
-              <a href="#">
+              <Link href="#">
                 <Image src="/assets/home/natural_teas.webp" alt="natural teas" width={442} height={450}
                   className="object-cover w-full h-[384px] md:w-[348px] md:h-[450px] lg:w-[442px] lg:[450px]
                   pb-[14px] md:pb-[24px] lg:pb-[24px]" />
@@ -87,11 +87,11 @@ export default function Home() {
                 <p className="text-[#666] text-[14px] leading-[21px] md:text-[16px] md:leading-[24px] lg:text-[16px] lg:leading-[24px]">
                   Refreshing blends for body and mind.
                 </p>
-              </a>
+              </Link>
             </div>
 
             <div>
-              <a href="#">
+              <Link href="#">
                 <Image src="/assets/home/handcrafted_candles.webp" alt="handcrafted Candles" width={442} height={450}
                   className="object-cover w-full h-[384px] md:w-[348px] md:h-[450px] lg:w-[442px] lg:[450px]
                   pb-[14px] md:pb-[24px] lg:pb-[24px]" />
@@ -108,10 +108,10 @@ export default function Home() {
                 <p className="text-[#666] text-[14px] leading-[21px] md:text-[16px] md:leading-[24px] lg:text-[16px] lg:leading-[24px]">
                   Aromatic light for calming spaces.
                 </p>
-              </a>
+              </Link>
             </div>
             <div>
-              <a href="#">
+              <Link href="#">
                 <Image src="/assets/home/artisanal_soaps.webp" alt="artisanal soaps" width={442} height={450}
                   className="object-cover w-full h-[384px] md:w-[348px] md:h-[450px] lg:w-[442px] lg:[450px]
                   pb-[14px] md:pb-[24px] lg:pb-[24px]" />
@@ -128,7 +128,7 @@ export default function Home() {
                 <p className="text-[#666] text-[14px] leading-[21px] md:text-[16px] md:leading-[24px] lg:text-[16px] lg:leading-[24px]">
                   Gentle cleansing with natural botanicals.
                 </p>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -160,7 +160,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 gap-[24px] md:grid-cols-2 md:gap-x-[31px] md:gap-y-[40px] lg:grid-cols-3 lg:gap-[31px]">
             <div>
-              <a href="#">
+              <Link href="#">
                 <Image src="/assets/home/macroon_melts.webp" alt="artisanal soaps" width={438} height={468}
                   className="object-cover w-full h-[384px] md:w-[344.5px] md:h-[468px] lg:w-[438px] lg:[468px]
                   mb-[18px] md:mb-[20px] lg:mb-[20px] shadow-[0_4px_10px_0_rgba(208,231,190,0.25)]" />
@@ -191,11 +191,11 @@ export default function Home() {
                   hover:bg-[#fff]">
                     Add to Cart
                   </a>
-              </a>
+              </Link>
             </div>
 
             <div>
-              <a href="#">
+              <Link href="#">
                 <Image src="/assets/home/Organic_Berry.webp" alt="Organic Berry Berry" width={438} height={468}
                   className="object-cover w-full h-[384px] md:w-[344.5px] md:h-[468px] lg:w-[438px] lg:[468px]
                   mb-[18px] md:mb-[20px] lg:mb-[20px] shadow-[0_4px_10px_0_rgba(208,231,190,0.25)]" />
@@ -226,12 +226,12 @@ export default function Home() {
                   hover:bg-[#fff]">
                     Add to Cart
                   </a>
-              </a>
+              </Link>
             </div>
 
 
             <div>
-              <a href="#">
+              <Link href="#">
                 <Image src="/assets/home/Tea&Saucer.webp" alt="Teacup and Saucer Candle" width={438} height={468}
                   className="object-cover w-full h-[384px] md:w-[344.5px] md:h-[468px] lg:w-[438px] lg:[468px]
                   mb-[18px] md:mb-[20px] lg:mb-[20px] shadow-[0_4px_10px_0_rgba(208,231,190,0.25)]" />
@@ -262,7 +262,7 @@ export default function Home() {
                   hover:bg-[#fff]">
                     Add to Cart
                   </a>
-              </a>
+              </Link>
             </div>
           </div>
 
