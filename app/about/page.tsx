@@ -208,7 +208,7 @@ gap-[24px] grid-cols-1 md:grid-cols-2 md:gap-[32px]">
                                 <h3 className="mb-[20px] lg:mb-[24px] md:[24px] font-medium text-[#111] lg:text-[24px] lg:leading-[36px] md:text-[24px] md:leading-[36px] text-[20px] leading-[30px]">
                                     {feature.title}
                                 </h3>
-                                <p className="text-[#666] font-normal text-[16px] leading-[24px] md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px] md:max-w-[344px]">
+                                <p className="text-[#666] text-center mx-auto font-normal text-[16px] leading-[24px] md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px] md:max-w-[344px]">
                                     {feature.description}
                                 </p>
                             </div>
