@@ -14,19 +14,19 @@ const features = [
         title: "100% Natural & Pure",
         description: "Our teas, candles, and soaps are crafted with only natural ingredients — no artificial additives, ever.",
         imageSrc: "/assets/about/naturalpure.svg",
-        alt: "natural",
+        alt: "100% Natural & Pure",
     },
     {
         title: "Handcrafted With Care",
         description: "Every product is made in small batches, ensuring artisanal quality and attention to detail.",
         imageSrc: "/assets/about/handcraft.svg",
-        alt: "Handcrafted",
+        alt: "Handcrafted With Care",
     },
     {
         title: "Affordable Prices",
         description: "We make premium products accessible without compromising on quality.",
         imageSrc: "/assets/about/affortable.svg",
-        alt: "Affordable",
+        alt: "Affordable Prices",
         colSpanMd: 2, // optional for custom grid behavior
     },
 ];
