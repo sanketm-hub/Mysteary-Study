@@ -3,6 +3,7 @@ import "./globals.css";
 import React from "react";
 import { Geist, Wittgenstein } from "next/font/google";
 import Footer from "@/app/components/Footer";
+import TopBar from "./components/TopBar";
 
 // Google Fonts setup
 const geistSans = Geist({
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${wittgenstein.variable} antialiased`}
       >
+        <TopBar />
         {children}
         <Footer />
       </body>
