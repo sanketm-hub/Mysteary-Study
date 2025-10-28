@@ -35,7 +35,7 @@ export default function CustomBreadscrum() {
         {/* Home link */}
         <BreadcrumbItem>
           <BreadcrumbLink asChild>
-            <Link className="text-[#666] text-[12px] leading-[18px] md:text-[14px] md:leading-[21px] lg:text-[14px] lg:leading-[21px]" href="/home">
+            <Link className="text-[#666] text-[12px] leading-[18px] md:text-[14px] md:leading-[21px] lg:text-[14px] lg:leading-[21px]" href="/">
               Home
             </Link>
           </BreadcrumbLink>
