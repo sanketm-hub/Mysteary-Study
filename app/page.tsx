@@ -43,7 +43,7 @@ const features = [
 export default function Home() {
   return (
     <>
-      <section className={`min-h-[408px] md:min-h-[654px] lg:min-h-[654px] ${geistSans.className}`}>
+      <section className={` ${geistSans.className}`}>
         <div className="w-full">
           <div className="flex flex-row gap-[10px]">
             <div className="w-full md:w-[454px] lg:w-[454px] hidden md:hidden lg:block">
@@ -54,7 +54,7 @@ export default function Home() {
                 height={654}
               />
             </div>
-            <div className="w-full md:w-full lg:w-[978px] flex-1
+            <div className="w-full md:w-full lg:w-[978px] flex-1 md:min-h-[654px] min-h-[460px] lg:min-h-[654px]
           lg:bg-[url('/assets/home/home_desktop_ban.webp')] 
           md:bg-[url('/assets/home/home_tab_ban.webp')] 
           bg-[url('/assets/home/home_mob_ban.webp')] 
@@ -99,7 +99,7 @@ export default function Home() {
                   className="object-cover w-full h-[384px] md:w-[348px] md:h-[450px] lg:w-[442px] lg:[450px]
                   pb-[14px] md:pb-[24px] lg:pb-[24px]" />
 
-                <h4 className="flex flex-row justify-between items-center text-[#111] text-[18px] leading-[27px]
+                <h4 className="flex flex-row justify-between items-center font-medium text-[#111] text-[18px] leading-[27px]
                   md:text-[20px] md:leading-[30px] lg:text-[20px] lg:leading-[30px] mb-[4px] md:mb-[8px] lg:mb-[8px]">
                   Natural Teas
                   <span>
@@ -120,7 +120,7 @@ export default function Home() {
                   className="object-cover w-full h-[384px] md:w-[348px] md:h-[450px] lg:w-[442px] lg:[450px]
                   pb-[14px] md:pb-[24px] lg:pb-[24px]" />
 
-                <h4 className="flex flex-row justify-between items-center text-[#111] text-[18px] leading-[27px]
+                <h4 className="flex flex-row justify-between items-center font-medium text-[#111] text-[18px] leading-[27px]
                   md:text-[20px] md:leading-[30px] lg:text-[20px] lg:leading-[30px] mb-[4px] md:mb-[8px] lg:mb-[8px]">
                   Handcrafted Candles
                   <span>
@@ -140,7 +140,7 @@ export default function Home() {
                   className="object-cover w-full h-[384px] md:w-[348px] md:h-[450px] lg:w-[442px] lg:[450px]
                   pb-[14px] md:pb-[24px] lg:pb-[24px]" />
 
-                <h4 className="flex flex-row justify-between items-center text-[#111] text-[18px] leading-[27px]
+                <h4 className="flex flex-row justify-between items-center font-medium text-[#111] text-[18px] leading-[27px]
                   md:text-[20px] md:leading-[30px] lg:text-[20px] lg:leading-[30px] mb-[4px] md:mb-[8px] lg:mb-[8px]">
                   Artisanal Soaps
                   <span>
@@ -757,7 +757,7 @@ export default function Home() {
                                       width={656}
                                       height={560}
                                       className="object-cover md:w-full md:h-[560px]
-                              lg:w-[656px] lg:h-[560px] w-full h-auto"
+                              lg:w-[656px] lg:h-[560px] w-full h-[320px]"
                                   />
                               </div>
                               <div className="content-col w-full md:w-full lg:w-1/2">
