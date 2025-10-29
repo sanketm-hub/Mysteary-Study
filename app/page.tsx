@@ -5,6 +5,8 @@ import { Geist, Wittgenstein } from "next/font/google";
 import FeaturedCards from "./components/FeaturedCards";
 import StayTune from "@/app/components/StayTune";
 import Link from "next/link";
+import ProductCard from "./components/ProductCard";
+import ProductCategoryCard from "./components/ProductCategoryCard";
 
 // Google Fonts setup
 const geistSans = Geist({
@@ -158,7 +160,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={`bg-[#fff] ${geistSans.className}`}>
+      {/* <section className={`bg-[#fff] ${geistSans.className}`}>
 
         <div className="max-w-[1376px] mx-auto pt-[48px] pb-[64px] px-[16px] md:pt-[64px] md:pb-[80px] md:px-[24px]
             lg:pt-[64px] lg:pb-[80px] lg:px-[24px]">
@@ -297,7 +299,8 @@ export default function Home() {
 
 
         </div>
-      </section>
+      </section> */}
+      <ProductCard />
 
       <section className={`lg:bg-[url('/assets/home/wellness_desk_ban.webp')] bg-cover bg-center bg-no-repeat
         md:bg-[url('/assets/home/wellness_tab_ban.webp')] bg-[url('/assets/home/wellness_mob_ban.webp')]
@@ -318,7 +321,7 @@ export default function Home() {
 
       <FeaturedCards />
 
-      <section className={`bg-[#fff] ${geistSans.className}`}>
+      {/* <section className={`bg-[#fff] ${geistSans.className}`}>
 
         <div className="max-w-[1376px] mx-auto pt-[48px] pb-0 px-[16px] md:pt-[64px] md:pb-0 md:px-[24px]
             lg:pt-[64px] lg:pb-0 lg:px-[24px]">
@@ -457,7 +460,9 @@ export default function Home() {
 
 
         </div>
-      </section>
+      </section> */}
+
+      <ProductCategoryCard category="Seasonal Teas" />
 
 
       <section className={`bg-[#fff] ${geistSans.className}`}>
