@@ -34,33 +34,35 @@ interface Product {
 export default function ProductCategoryCard({ category }: { category: string }){
 const [products, setProducts] = useState<Product[]>([]);
 
-//   useEffect(() => {
 
-//     const fetchProducts = async () => {
-//       const query = `*[_type == "product" && category->title == $category]{
-//         _id,
-//         name,
-//         price,
-//         slug,
-//         "image": image[]{
-//           asset->{
-//             url
-//           }
-//         }
-//       }`;
+  // useEffect(() => {
+  //   const fetchProducts = async () => {
+     
+  //     const query = `*[_type == "product" && $category in categories[]->name]
+  //     | order(_createdAt desc){
+  //       _id,
+  //       name,
+  //       price,
+  //       slug,
+  //       "image": image[]{ asset->{ url } }
+  //     }`;
 
-//       const data = await client.fetch(query);
-//       setProducts(data);
-//     };
+  //     try {
+  //       const data = await client.fetch(query, { category });
+  //       setProducts(data);
+  //     } catch (error) {
+  //       console.error("Error fetching products:", error);
+  //     }
+  //   };
 
-//     fetchProducts();
-//   }, [category]);
+  //   if (category) fetchProducts();
+  // }, [category]);
 
 
-  useEffect(() => {
+    useEffect(() => {
     const fetchProducts = async () => {
-      // ✅ Dynamic category query
-      const query = `*[_type == "product" && category->name == $category]{
+      // ✅ Updated GROQ for multiple categories
+      const query = `*[_type == "product" && $category in categories[]->name] | order(_createdAt desc) {
         _id,
         name,
         price,
@@ -78,6 +80,7 @@ const [products, setProducts] = useState<Product[]>([]);
 
     if (category) fetchProducts();
   }, [category]);
+  
  return (
     <section className={`bg-white ${geistSans.className}`}>
       <div className="max-w-[1376px] mx-auto pt-[48px] pb-0 px-[16px] md:pt-[64px] md:px-[24px] lg:pt-[64px] lg:px-[24px]">
@@ -118,7 +121,7 @@ const [products, setProducts] = useState<Product[]>([]);
               <Link key={product._id} href={`/product/${product.slug.current}`}>
                 <div>
                   <Image
-                    src={product.image?.[0]?.asset?.url || "/assets/home/macroon_melts.webp"}
+                    src={product.image?.[0]?.asset?.url}
                     alt={product.name}
                     width={438}
                     height={468}
@@ -150,7 +153,7 @@ const [products, setProducts] = useState<Product[]>([]);
                     className="py-[14px] px-[24px] md:py-[14px] md:px-[32px] lg:py-[14px] lg:px-[32px]
                     inline-block w-full bg-white text-[#1A2E05]
                     text-[16px] leading-[24px] md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px]
-                    border border-[#CEE3BC] text-center hover:bg-[#CEE3BC] transition-all duration-300"
+                    border border-[#CEE3BC] text-center hover:bg-[#CEE3BC] transition-all duration-300 cursor-pointer"
                   >
                     Add to Cart
                   </button>

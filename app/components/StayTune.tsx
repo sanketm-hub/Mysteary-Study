@@ -45,7 +45,7 @@ export default function StayTune() {
                                 className="text-[rgba(17, 17, 17, 0.40);] font-normal
                             lg:px-[16px] lg:py-[16px] md:px-[16px] md:py-[16px] lg:text-[18px] lg:leading-[27px]
                             md:text-[18px] md:leading-[27px] text-[16px] leading-[24px]
-                            bg-[#fff] border border-[rgba(127, 127, 127, 0.40)] w-full focus:outline-none
+                            bg-white border border-[rgba(127,127,127,0.40)] w-full focus:outline-none
                             lg:w-[385px] md:w-[385px] px-[14px] py-[14px]"
                             />
 
@@ -54,7 +54,7 @@ export default function StayTune() {
                                     className="text-[#1A2E05] font-normal text-[16px] leading-[24px]
                             lg:text-[18px] lg:leading-[27px] md:text-[18px] md:leading-[27px]
                             lg:py-[16px] lg:px-[32px] md:py-[16px] md:px-[32px] py-[14px] px-[32px]
-                            bg-[#fff] w-full lg:[189px] md:w-[189px] cursor-pointer hover:bg-[#1A2E05] hover:text-[#CBE1BD]">
+                            bg-white w-full lg:[189px] md:w-[189px] cursor-pointer hover:bg-[#1A2E05] hover:text-[#CBE1BD]">
                                     Subscribe Now
                                 </button>
                             </div>

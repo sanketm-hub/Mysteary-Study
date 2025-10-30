@@ -464,6 +464,14 @@ export default function Home() {
 
       <ProductCategoryCard category="Seasonal Teas" />
 
+      <ProductCategoryCard category="Vegan Candles" />
+
+      <ProductCategoryCard category="Goat Milk Soaps" />
+
+      {/* <ProductCategoryCard category="All" /> */}
+
+      
+
 
       {/* <section className={`bg-white ${geistSans.className}`}>
 

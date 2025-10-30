@@ -30,7 +30,7 @@ export default function ShopBestsellers() {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const query = `*[_type == "product"][0...3]{
+      const query = `*[_type == "product"] | order(_createdAt desc)[0...3]{
         _id,
         name,
         price,
@@ -78,11 +78,11 @@ export default function ShopBestsellers() {
             <Link href={`/product/${product.slug.current}`} key={product._id}>
               <div>
                 <Image
-                 src={product.image?.[0]?.asset?.url || "/assets/home/macroon_melts.webp"}
+                 src={product.image?.[0]?.asset?.url}
                   alt={product.name}
                   width={438}
                   height={468}
-                  className="object-cover w-full h-[384px] md:w-[344.5px] md:h-[468px] lg:w-[438px] lg:[468px]
+                  className="object-cover w-full h-[384px] md:w-[344.5px] md:h-[468px] lg:w-[438px] lg:h-[468px]
                     mb-[18px] md:mb-[20px] lg:mb-[20px] shadow-[0_4px_10px_0_rgba(208,231,190,0.25)]"
                 />
                 <h4 className="text-[#222] text-[18px] leading-[27px] md:text-[20px] md:leading-[30px] mb-[8px] lg:mb-[12px]">
