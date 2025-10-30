@@ -4,13 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { client } from "@/sanity/lib/client";
-import { Geist } from "next/font/google";
+import { Geist,Wittgenstein } from "next/font/google";
 
 const geistSans = Geist({
   subsets: ["latin"],
   variable: "--font-geist-sans",
 });
-
+const wittgenstein = Wittgenstein({
+  variable: "--font-wittgenstein",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 interface Product {
   _id: string;
   name: string;
@@ -75,14 +79,14 @@ const [products, setProducts] = useState<Product[]>([]);
     if (category) fetchProducts();
   }, [category]);
  return (
-    <section className={`bg-[#fff] ${geistSans.className}`}>
+    <section className={`bg-white ${geistSans.className}`}>
       <div className="max-w-[1376px] mx-auto pt-[48px] pb-0 px-[16px] md:pt-[64px] md:px-[24px] lg:pt-[64px] lg:px-[24px]">
         {/* Header */}
         <div className="flex flex-row justify-between items-center mb-[32px] md:mb-[40px] lg:mb-[40px]">
           <div>
             <h2
               className={`text-[#111] font-medium text-[24px] leading-[28.8px]
-              md:text-[32px] md:leading-[38.4px] lg:text-[32px] lg:leading-[38.4px]`}
+              md:text-[32px] md:leading-[38.4px] lg:text-[32px] lg:leading-[38.4px] ${wittgenstein.className}`}
             >
               {category}
             </h2>
@@ -144,7 +148,7 @@ const [products, setProducts] = useState<Product[]>([]);
                   </div>
                   <button
                     className="py-[14px] px-[24px] md:py-[14px] md:px-[32px] lg:py-[14px] lg:px-[32px]
-                    inline-block w-full bg-[#fff] text-[#1A2E05]
+                    inline-block w-full bg-white text-[#1A2E05]
                     text-[16px] leading-[24px] md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px]
                     border border-[#CEE3BC] text-center hover:bg-[#CEE3BC] transition-all duration-300"
                   >

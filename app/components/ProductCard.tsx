@@ -49,7 +49,7 @@ export default function ShopBestsellers() {
   }, []);
 
   return (
-    <section className={`bg-[#fff] ${geistSans.className}`}>
+    <section className={`bg-white ${geistSans.className}`}>
       <div className="max-w-[1376px] mx-auto pt-[48px] pb-[64px] px-[16px] md:pt-[64px] md:pb-[80px] md:px-[24px]
           lg:pt-[64px] lg:pb-[80px] lg:px-[24px]">
         
@@ -110,7 +110,7 @@ export default function ShopBestsellers() {
                   href={`/product/${product.slug.current}`}
                   className="py-[14px] px-[24px] inline-block w-full bg-[#CEE3BC] text-[#1A2E05]
                     text-[16px] leading-[24px] md:text-[18px] md:leading-[27px] border border-[#CEE3BC] text-center
-                    hover:bg-[#fff]"
+                    hover:bg-white"
                 >
                   Add to Cart
                 </a>

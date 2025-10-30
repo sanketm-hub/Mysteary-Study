@@ -76,7 +76,7 @@ export default function Home() {
                 </p>
                 <Link href="/contact-us" className="w-fit bg-[#1A2E05] text-[#CEE3BC] py-[14px] px-[24px]
                 md:py-[16px] md:px-[32px] lg:py-[16px] lg:px-[32px] text-[16px] leading-[24px]
-                md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px] hover:text-[#1A2E05] hover:bg-[#fff]">
+                md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px] hover:text-[#1A2E05] hover:bg-white">
                   Shop Now
                 </Link>
               </div>
@@ -87,7 +87,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={`bg-[#fff] ${geistSans.className}`}>
+      <section className={`bg-white ${geistSans.className}`}>
         <div className="max-w-[1376px] mx-auto pt-[48px] px-[16px] md:pt-[64px] md:px-[24px] lg:pt-[64px] lg:px-[32px]">
           <h2 className={`text-[#111] font-medium text-[24px] leading-[28.8px]
             md:text-[32px] md:leading-[38.4px] lg:text-[32px] lg:leading-[38.4px]
@@ -465,7 +465,7 @@ export default function Home() {
       <ProductCategoryCard category="Seasonal Teas" />
 
 
-      <section className={`bg-[#fff] ${geistSans.className}`}>
+      {/* <section className={`bg-white ${geistSans.className}`}>
 
         <div className="max-w-[1376px] mx-auto pt-[48px] pb-0 px-[16px] md:pt-[64px] md:pb-0 md:px-[24px]
             lg:pt-[64px] lg:pb-0 lg:px-[24px]">
@@ -519,7 +519,7 @@ export default function Home() {
                   </div>
                 </div>
                 <a href="#"
-                  className="py-[14px] px-[24px] md:py-[14px] md:px-[32px] lg:py-[14px] lg:px-[32px] inline-block w-full bg-[#fff] text-[#1A2E05]
+                  className="py-[14px] px-[24px] md:py-[14px] md:px-[32px] lg:py-[14px] lg:px-[32px] inline-block w-full bg-white text-[#1A2E05]
                   text-[16px] leading-[24px] md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px] border border-[#CEE3BC] text-center
                   hover:bg-[#CEE3BC]">
                   Add to Cart
@@ -556,7 +556,7 @@ export default function Home() {
                   </div>
                 </div>
                 <a href="#"
-                  className="py-[14px] px-[24px] md:py-[14px] md:px-[32px] lg:py-[14px] lg:px-[32px] inline-block w-full bg-[#fff] text-[#1A2E05]
+                  className="py-[14px] px-[24px] md:py-[14px] md:px-[32px] lg:py-[14px] lg:px-[32px] inline-block w-full bg-white text-[#1A2E05]
                   text-[16px] leading-[24px] md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px] border border-[#CEE3BC] text-center
                   hover:bg-[#CEE3BC]">
                   Add to Cart
@@ -572,7 +572,7 @@ export default function Home() {
       </section>
 
 
-      <section className={`bg-[#fff] ${geistSans.className}`}>
+      <section className={`bg-white ${geistSans.className}`}>
 
         <div className="max-w-[1376px] mx-auto pt-[48px] pb-0 px-[16px] md:pt-[64px] md:pb-0 md:px-[24px]
             lg:pt-[64px] lg:pb-0 lg:px-[24px]">
@@ -626,7 +626,7 @@ export default function Home() {
                   </div>
                 </div>
                 <a href="#"
-                  className="py-[14px] px-[24px] md:py-[14px] md:px-[32px] lg:py-[14px] lg:px-[32px] inline-block w-full bg-[#fff] text-[#1A2E05]
+                  className="py-[14px] px-[24px] md:py-[14px] md:px-[32px] lg:py-[14px] lg:px-[32px] inline-block w-full bg-white text-[#1A2E05]
                   text-[16px] leading-[24px] md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px] border border-[#CEE3BC] text-center
                   hover:bg-[#CEE3BC]">
                   Add to Cart
@@ -663,7 +663,7 @@ export default function Home() {
                   </div>
                 </div>
                 <a href="#"
-                  className="py-[14px] px-[24px] md:py-[14px] md:px-[32px] lg:py-[14px] lg:px-[32px] inline-block w-full bg-[#fff] text-[#1A2E05]
+                  className="py-[14px] px-[24px] md:py-[14px] md:px-[32px] lg:py-[14px] lg:px-[32px] inline-block w-full bg-white text-[#1A2E05]
                   text-[16px] leading-[24px] md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px] border border-[#CEE3BC] text-center
                   hover:bg-[#CEE3BC]">
                   Add to Cart
@@ -701,7 +701,7 @@ export default function Home() {
                   </div>
                 </div>
                 <a href="#"
-                  className="py-[14px] px-[24px] md:py-[14px] md:px-[32px] lg:py-[14px] lg:px-[32px] inline-block w-full bg-[#fff] text-[#1A2E05]
+                  className="py-[14px] px-[24px] md:py-[14px] md:px-[32px] lg:py-[14px] lg:px-[32px] inline-block w-full bg-white text-[#1A2E05]
                   text-[16px] leading-[24px] md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px] border border-[#CEE3BC] text-center
                   hover:bg-[#CEE3BC]">
                   Add to Cart
@@ -714,15 +714,15 @@ export default function Home() {
 
 
         </div>
-      </section>
+      </section> */}
 
-      <section className={`bg-[#fff] mt-[64px] md:mt-[80px] lg:mt-[80px]
+      <section className={`bg-white mt-[64px] md:mt-[80px] lg:mt-[80px]
         min-h-[384px] md:min-h-[464px] lg:min-h-[464px] ${geistSans.className}
         lg:bg-[url('/assets/home/bring_wellness_desk_ban.webp')] bg-cover bg-center bg-no-repeat
         md:bg-[url('/assets/home/bring_wellness_tab_ban.webp')] bg-[url('/assets/home/bring_wellness_mob_ban.webp')]`}>
         <div className="max-w-[1440px] mx-auto py-[64px] px-[16px] md:py-[80px] md:px-[48px] lg:py-[80px] lg:px-[48px]">
           <div className="md:max-w-[520px] lg:max-w-[520px]">
-            <h2 className={`text-[#fff] font-medium text-[32px] leading-[38.4px]
+            <h2 className={`text-white font-medium text-[32px] leading-[38.4px]
                       md:text-[42px] md:leading-[50.4px] lg:text-[42px] lg:leading-[50.4px]
                       mb-[20px] md:mb-[24px] lg:mb-[24px] ${wittgenstein.className}`}>
              Bring Wellness Home
@@ -733,7 +733,7 @@ export default function Home() {
             </p>          
             <div className="flex flex-col gap-[16px] md:flex-row md:gap-[20px] lg:flex-row lg:gap-[20px]">
               <Link href="#"
-              className="bg-[#fff] py-[14px] px-[24px] md:py-[16px] md:px-[32px] lg:py-[16px] lg:px-[32px]
+              className="bg-white py-[14px] px-[24px] md:py-[16px] md:px-[32px] lg:py-[16px] lg:px-[32px]
               w-full md:w-fit lg:w-fit text-center text-[#1A2E05] text-[16px] leading-[24px] md:text-[18px] md:leading-[27px]
               lg:text-[18px] lg:leading-[27px] hover:bg-[#CEE3BC] cursor-pointer"
               >Shop Now</Link>
@@ -741,7 +741,7 @@ export default function Home() {
               <Link href="#"
               className="bg-[#CEE3BC] py-[14px] px-[24px] md:py-[16px] md:px-[32px] lg:py-[16px] lg:px-[32px]
               w-full md:w-fit lg:w-fit text-center text-[#1A2E05] text-[16px] leading-[24px] md:text-[18px] md:leading-[27px]
-              lg:text-[18px] lg:leading-[27px] hover:bg-[#fff] cursor-pointer"
+              lg:text-[18px] lg:leading-[27px] hover:bg-white cursor-pointer"
               >Explore Teas</Link>
             </div>
           </div>
@@ -750,7 +750,7 @@ export default function Home() {
       
       </section>
 
-      <section className={`bg-[#fff] ${geistSans.className}`}>
+      <section className={`bg-white ${geistSans.className}`}>
                       <div className="max-w-[1376px] mx-auto lg:py-[80px] lg:px-[32px]
                   md:py-[80px] md:px-[24px] py-[64px] px-[16px]">
                           <div className="flex flex-col lg:flex-row lg:gap-[64px] md:gap-[40px] gap-[32px] items-center
@@ -780,7 +780,7 @@ export default function Home() {
                                   </p>
 
                                   <Link href="#"
-                                  className="bg-[#CEE3BC] border border-[#CEE3BC] w-fit py-[14px] px-[24px] inline-block hover:bg-[#fff] cursor-pointer
+                                  className="bg-[#CEE3BC] border border-[#CEE3BC] w-fit py-[14px] px-[24px] inline-block hover:bg-white cursor-pointer
                                   md:py-[16px] md:px-[32px] lg:py-[16px] lg:px-[32px] text-[#1A2E05] text-[16px] leading-[24px]
                                   md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px]">
                                     Discover Our Story
