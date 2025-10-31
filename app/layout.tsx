@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import React from "react";
 import { Geist, Wittgenstein } from "next/font/google";
+import Header from "./components/Header";
 import Footer from "@/app/components/Footer";
 import TopBar from "./components/TopBar";
+import Nav from "./components/nav";
 
 // Google Fonts setup
 const geistSans = Geist({
@@ -33,6 +35,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${wittgenstein.variable} antialiased`}
       >
         <TopBar />
+        <Header />
+        {/* <Nav /> */}
         {children}
         <Footer />
       </body>

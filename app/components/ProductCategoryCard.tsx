@@ -62,7 +62,7 @@ const [products, setProducts] = useState<Product[]>([]);
     useEffect(() => {
     const fetchProducts = async () => {
       // ✅ Updated GROQ for multiple categories
-      const query = `*[_type == "product" && $category in categories[]->name] | order(_createdAt desc) {
+      const query = `*[_type == "product" && $category in categories[]->name] | order(_createdAt asc) [0...3] {
         _id,
         name,
         price,
