@@ -2,21 +2,20 @@ import type { Metadata } from "next";
 import "./globals.css";
 import React from "react";
 import { Geist, Wittgenstein } from "next/font/google";
-import Header from "./components/Header";
 import Footer from "@/app/components/Footer";
 import TopBar from "./components/TopBar";
-import Nav from "./components/nav";
+import HeaderWrapper from "@/app/components/HeaderWrapper";
 
 // Google Fonts setup
 const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
 });
 
 const wittgenstein = Wittgenstein({
-    variable: "--font-wittgenstein",
-    subsets: ["latin"],
-    weight: ["400", "500", "600", "700"],
+  variable: "--font-wittgenstein",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -35,7 +34,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${wittgenstein.variable} antialiased`}
       >
         <TopBar />
-        <Header />
+        {/* ✅ Dynamic Header */}
+        <HeaderWrapper />
         {/* <Nav /> */}
         {children}
         <Footer />

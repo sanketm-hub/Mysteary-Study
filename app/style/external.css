@@ -12,7 +12,14 @@ width: 20px;
 height: 20px;
 }
 }
-
+/* 
 [data-state="closed"]:hover > .navigation-menu__content {
   display: block !important;
+} */
+
+
+.headermenu button[data-radix-collection-item] {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
