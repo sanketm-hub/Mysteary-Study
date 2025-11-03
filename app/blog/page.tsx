@@ -182,7 +182,7 @@ export default function Blog(){
                 <div className="flex flex-col justify-center text-center items-center">
                     <button className="py-3.5 px-8 md:py-4 md:px-8 lg:py-4 lg:px-8 bg-[#CEE3BC] border border-[#CEE3BC] text-[#1A2E05]
                     text-[16px] leading-[24px] md:text-[18px] md:leading-[27px] lg:text-[18px] lg:leading-[27px]
-                    w-fit cursor-pointer hover:bg-[#fff]">
+                    w-fit cursor-pointer hover:bg-white">
                         Load More
                     </button>
 

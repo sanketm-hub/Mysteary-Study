@@ -68,7 +68,7 @@ export default function About() {
             </section>
 
             { /* Mystry touch */}
-            <section className={`bg-[#fff] ${geistSans.className}`}>
+            <section className={`bg-white ${geistSans.className}`}>
                 <div className="max-w-[1376px] mx-auto lg:pt-[80px] lg:px-[32px] xl:px-[32px] 2xl:px-[32px]
             md:pt-[80px] md:px-[24px] pt-[64px] px-[16px]">
                     <div className="flex flex-col lg:flex-row lg:gap-[64px] md:gap-[64px] gap-[32px] items-center
@@ -122,7 +122,7 @@ export default function About() {
                 </div>
             </section>
 
-            <section className={`bg-[#fff] ${geistSans.className}`}>
+            <section className={`bg-white ${geistSans.className}`}>
                 <div className="max-w-[1376px] mx-auto pt-[48px] px-[16px]
         md:pt-[64px] md:px-[24px] lg:pt-[64px] lg:px-[32px]
         xl:pt-[64px] 2xl:pt-[64px] xl:px-[32px] 2xl:px-[32px]">
@@ -216,12 +216,12 @@ gap-[24px] grid-cols-1 md:grid-cols-2 md:gap-[32px]">
                     </div>
 
 
-                    <hr className="border-b-1 border-[#D0E7BE]
+                    <hr className="border-b border-[#D0E7BE]
             mt-[48px] xl:mt-[64px] 2xl:mt-[64px] lg:mt-[64px] md:madet-[64px]" />
                 </div>
             </section>
 
-            <section className={`bg-[#fff] ${geistSans.className}`}>
+            <section className={`bg-white ${geistSans.className}`}>
                 <div className="max-w-[1376px] mx-auto pb-[64px] pt-[48px] px-[16px] xl:px-[32px] 2xl:px-[32px]
             lg:px-[32px] md:px-[24px] lg:pt-[64px] lg:pb-[80px]
             xl:pt-[64px] xl:pb-[80px] 2xl:pt-[64px] 2xl:pb-[80px]
@@ -230,7 +230,7 @@ gap-[24px] grid-cols-1 md:grid-cols-2 md:gap-[32px]">
                 lg:flex-row lg:gap-[32px]
                 md:flex-col md:gap-[32px]">
                         <div className="philosophy w-full lg:w-1/2 p-[24px] lg:p-[32px] md:p-[32px]
-                    border-1 rounded-[1px] border-[#DBDBDB] bg-[#fff]">
+                    border rounded-[1px] border-[#DBDBDB] bg-white">
                             <h3 className={`mb-[20px] lg:mb-[24px] md:mb-[24px]
                         text-[#111] font-medium text-[20px] leading-[24px]
                         lg:text-[24px] lg:leading-[28.8px]
@@ -246,7 +246,7 @@ gap-[24px] grid-cols-1 md:grid-cols-2 md:gap-[32px]">
                             </p>
                         </div>
                         <div className="promise w-full lg:w-1/2 p-[24px] lg:p-[32px] md:p-[32px]
-                    border-1 rounded-[1px] border-[#DBDBDB] bg-[#fff]">
+                    border rounded-[1px] border-[#DBDBDB] bg-white">
                             <h3 className={`mb-[20px] lg:mb-[24px] md:mb-[24px]
                         text-[#111] font-medium text-[20px] leading-[24px]
                         lg:text-[24px] lg:leading-[28.8px]

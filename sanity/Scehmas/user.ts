@@ -9,6 +9,7 @@ export const user = defineType({
       name: "name",
       title: "Full Name",
       type: "string",
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "email",
@@ -17,13 +18,23 @@ export const user = defineType({
       validation: (Rule) => Rule.required().email(),
     }),
     defineField({
-      name: "password",
-      title: "Password (hashed)",
+      name: "passwordHash",
+      title: "Password Hash",
       type: "string",
-      hidden: true, // we don't want to expose this in the studio
+      hidden: true, // Prevent exposure in Sanity Studio
     }),
-
-
+    defineField({
+      name: "provider",
+      title: "Auth Provider",
+      type: "string",
+      initialValue: "credentials",
+    }),
+    defineField({
+      name: "createdAt",
+      title: "Created At",
+      type: "datetime",
+      initialValue: () => new Date().toISOString(),
+    }),
   ],
 });
 
