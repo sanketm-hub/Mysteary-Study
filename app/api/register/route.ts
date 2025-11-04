@@ -6,29 +6,46 @@ export async function POST(req: Request) {
   try {
     const { name, email, password } = await req.json();
 
-    // Check if user already exists
+    // 1️⃣ Check if email already exists
     const existingUser = await client.fetch(
       `*[_type == "user" && email == $email][0]`,
       { email }
     );
-    if (existingUser)
-      return NextResponse.json({ success: false, message: "Email already registered" });
 
-    // Hash password
-    const hashedPassword = await bcrypt.hash(password, 10);
+    if (existingUser) {
+      return NextResponse.json({
+        success: false,
+        message: "Email already registered",
+      });
+    }
 
-    // Create user in Sanity
+    // 2️⃣ Hash password
+    const passwordHash = await bcrypt.hash(password, 10);
+
+    // 3️⃣ Create user document
     const newUser = await client.create({
       _type: "user",
       name,
       email,
-      passwordHash: hashedPassword,
+      passwordHash,
       createdAt: new Date().toISOString(),
     });
 
-    return NextResponse.json({ success: true, user: newUser });
+    // 4️⃣ Return safe user info
+    return NextResponse.json({
+      success: true,
+      user: {
+        _id: newUser._id,
+        name: newUser.name,
+        email: newUser.email,
+      },
+      message: "Registration successful!",
+    });
   } catch (error) {
-    console.error("Registration error:", error);
-    return NextResponse.json({ success: false, message: "Something went wrong" });
+    console.error("Sanity Registration Error:", error);
+    return NextResponse.json({
+      success: false,
+      message: "Something went wrong during registration.",
+    });
   }
 }

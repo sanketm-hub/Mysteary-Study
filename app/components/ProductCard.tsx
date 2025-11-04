@@ -106,14 +106,14 @@ export default function ShopBestsellers() {
                     </p>
                   </div>
                 </div>
-                <a
-                  href={`/product/${product.slug.current}`}
+                <button
+                  // href={`/product/${product.slug.current}`}
                   className="py-[14px] px-[24px] inline-block w-full bg-[#CEE3BC] text-[#1A2E05]
                     text-[16px] leading-[24px] md:text-[18px] md:leading-[27px] border border-[#CEE3BC] text-center
                     hover:bg-white"
                 >
                   Add to Cart
-                </a>
+                </button>
               </div>
             </Link>
           ))}

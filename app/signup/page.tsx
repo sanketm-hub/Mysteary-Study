@@ -24,22 +24,23 @@ export default function SignupPage() {
   const [showConfirm, setShowConfirm] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleRegister = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (password !== confirm) return toast.error("Passwords do not match");
+const handleRegister = async (e: React.FormEvent) => {
+  e.preventDefault();
+  if (password !== confirm) return toast.error("Passwords do not match");
 
-    setLoading(true);
-    const result = await registerUser(name, email, password);
-    setLoading(false);
+  setLoading(true);
+  const result = await registerUser(name, email, password);
+  setLoading(false);
 
-    if (result.success && result.user) {
-      login(result.user);
-      toast.success("Account created successfully!");
-      router.push("/"); // redirect after signup
-    } else {
-      toast.error(result.message);
-    }
-  };
+  if (result.success && result.user) {
+    login(result.user);
+    toast.success(" You have successfully registered!");
+    router.push("/"); // redirect to homepage
+  } else {
+    toast.error(result.message || "Registration failed. Try again.");
+  }
+};
+
 
   return (
     <section className="min-h-screen flex flex-col md:flex-row bg-white">

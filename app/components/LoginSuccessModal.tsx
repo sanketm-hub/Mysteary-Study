@@ -9,7 +9,7 @@ import {
   DialogTitle,
 } from "@/Components/ui/dialog";
 import { Button } from "@/Components/ui/button";
-import { Check } from "lucide-react";
+import { Check, X } from "lucide-react";
 
 export default function LoginSuccessModal({
   open,
@@ -23,11 +23,18 @@ export default function LoginSuccessModal({
   const handleContinue = () => {
     onClose();         // close modal
     router.push("/shop"); // ✅ redirect to shop page
+    // router.refresh();
+   
+  };
+
+    const handleClose = () => {
+    onClose();       // close modal state
+    
   };
 
   return (
-    <Dialog open={open} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-[420px] w-[90%] rounded-none p-8 bg-white shadow-lg text-center">
+    <Dialog open={open} onOpenChange={handleClose}>
+      <DialogContent aria-describedby={undefined} className="sm:max-w-[420px] w-[90%] rounded-none p-8 bg-white shadow-lg text-center">
         <DialogHeader>
           <div className="flex flex-col items-center">
             {/* ✅ Success Icon */}

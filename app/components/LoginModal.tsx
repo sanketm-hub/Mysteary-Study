@@ -47,23 +47,29 @@ export default function LoginDialog() {
     const [showPassword, setShowPassword] = useState(false);
 
 
-    const handleLogin = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setLoading(true);
+const handleLogin = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setLoading(true);
 
-        const result = await loginUser(email, password);
-        setLoading(false);
+  const result = await loginUser(email, password);
+  setLoading(false);
 
-        if (result.success && result.user) {
-            login(result.user);
-            setOpen(false);
-            setShowSuccess(true); // ✅ show success modal
-        } else {
-            toast.error("Login failed", {
-                description: result.message,
-            });
-        }
-    };
+  if (result.success && result.user) {
+    // ✅ Update Auth Context immediately
+    login(result.user);
+
+    // ✅ Small delay lets React re-render Header before opening Success Modal
+    setTimeout(() => {
+      setOpen(false);
+      setShowSuccess(true);
+    }, 100);
+  } else {
+    toast.error("Login failed", {
+      description: result.message,
+    });
+  }
+};
+
 
     return (
         <>
@@ -75,7 +81,8 @@ export default function LoginDialog() {
                     </button>
                 </DialogTrigger>
 
-                <DialogContent className="sm:max-w-[420px] md:max-w-[480px] lg:max-w-[512px] w-[95%] rounded-none p-6 md:p-12 lg:p-12 bg-white shadow-lg flex flex-col gap-10 border-0">
+                <DialogContent className="sm:max-w-[420px] md:max-w-[480px] lg:max-w-[512px] w-[95%] rounded-none p-6 md:p-12 lg:p-12 bg-white shadow-lg flex flex-col gap-10 border-0"
+                aria-describedby={undefined}>
                     {/* <DialogClose asChild>
                         <button
                             type="button"
