@@ -37,17 +37,17 @@ export default function LoginSuccessModal({
       <DialogContent aria-describedby={undefined} className="sm:max-w-[420px] w-[90%] rounded-none p-8 bg-white shadow-lg text-center">
         <DialogHeader>
           <div className="flex flex-col items-center">
-            {/* ✅ Success Icon */}
+            {/* Success Icon */}
             <div className="w-12 h-12 rounded-full bg-[#CEE3BC] flex items-center justify-center mb-4">
               <Check className="w-8 h-8 text-[#1A2E05]" />
             </div>
 
-            {/* ✅ Heading */}
+            {/*  Heading */}
             <DialogTitle className="text-xl font-semibold text-[#1A2E05] mb-2">
               Thank you for logging in!
             </DialogTitle>
 
-            {/* ✅ Description */}
+            {/*  Description */}
             <p className="text-sm text-gray-600 mb-6">
               You’ve successfully signed in. Exciting offers and personalized
               deals are waiting for you in our shop!

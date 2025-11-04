@@ -210,10 +210,20 @@ const handleLogin = async (e: React.FormEvent) => {
             </Dialog>
 
             {/* ✅ Success Modal */}
-            <LoginSuccessModal
+            {/* <LoginSuccessModal
                 open={showSuccess}
                 onClose={() => setShowSuccess(false)}
-            />
+            /> */}
+
+            <LoginSuccessModal
+  open={showSuccess}
+  onClose={() => {
+    setShowSuccess(false);
+    // ✅ This will automatically update the Header
+    // because useAuth() updates global state
+  }}
+/>
+
         </>
     );
 }
